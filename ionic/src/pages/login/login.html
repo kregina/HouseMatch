@@ -15,22 +15,22 @@
 <ion-content>
   <ion-slides pager>
 
-    <ion-slide style="background-color: green">
-      <h2>Slide 1</h2>
-    </ion-slide>
-
-    <ion-slide style="background-color: blue">
-      <h2>Slide 2</h2>
-    </ion-slide>
-
-    <ion-slide style="background-color: red">
-      <h2>Slide 3</h2>
+    <ion-slide>
+      <img src="../../assets/imgs/logo.svg" class="logo">
+      <ion-row margin-top>
+        <ion-col col-6>
+          <img src="../../assets/imgs/home.svg">
+        </ion-col>
+        <ion-col col-6>
+          <p text-left padding text-uppercase>Find your new <br> <span class="color-danger">ideal</span> <span class="color-primary">home</span> <br> without delay</p>
+        </ion-col>
+      </ion-row>
     </ion-slide>
 
   </ion-slides>
 
   <div text-center>
-    <button ion-button margin icon-left (click)="singIn('Home')">
+    <button ion-button margin icon-left large color="facebook" (click)="singIn('Home')">
       <ion-icon name="logo-facebook"></ion-icon>
       Sing in with Facebook
     </button>

@@ -3,7 +3,12 @@ page-login {
     margin-top: 0 !important;
 
     ion-slides{
+      background: #EEEEEE;
       height: 32em;
+
+      .logo{
+        width: 50%;
+      }
     }
   }
 }
