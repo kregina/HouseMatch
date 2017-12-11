@@ -1,0 +1,42 @@
+[
+  {
+    "imagem": "https://resizedimgs.vivareal.com/JdZS0DBRNEPWFyYwuATmkGSu1r4=/crop/360x240/vr.images.sp/2d4e94cd97b2d2aaeaa97c31badf68e3.jpg",
+    "aluguel" : "R$ 1.300",
+    "condominio": "não informado",
+    "caracteristicas": "80 m² 2 Quartos 2 Banheiros 4 Vagas",
+    "descricao": "Casa com 2 Quartos para Venda/Aluguel, 80m²",
+    "endereco": "Rua Serra Negra, 408 - Vila Balneária, Praia Grande - SP"
+  },
+  {
+    "imagem": "https://resizedimgs.vivareal.com/lXbga_yIY5MNOaqQ8xHPbv4Paaw=/crop/360x240/vr.images.sp/fe72455fc74bba087bb02073c54cc0fd.jpg",
+    "aluguel": "R$ 950",
+    "condominio": "R$ 345",
+    "caracteristicas": "56 m² 2 Quartos 1 Banheiros 1 Vagas",
+    "descricao": "Apartamento com 2 Quartos para Venda/Aluguel, 56m²",
+    "endereco": "Rua Luiz Anselmo, 100 - Matatu De Brotas, Salvador - BA"
+  },
+  {
+    "imagem": "https://resizedimgs.vivareal.com/OwKIlaXAoQ0K0GT6RW3yig9uJls=/crop/360x240/vr.images.sp/f820087c588b33ed21be3102c7deea2e.jpg",
+    "aluguel": "R$ 900",
+    "condominio": "R$ 150",
+    "caracteristicas": "25 m² 1 Quartos 1 Banheiros 1 Vagas",
+    "descricao": "Kitnet com Quarto para Aluguel, 25m²",
+    "endereco": "Rua Aldo de Oliveira Barbosa, 21 - Parque das Universidades, Campinas - SP"
+  },
+  {
+    "imagem": "https://resizedimgs.vivareal.com/DRIUj-BI1De1MUVaan23fiAKyZc=/crop/360x240/vr.images.sp/8b0e39cb5546dc6638cd51450da72c30.jpg",
+    "aluguel": "R$ 1.100",
+    "condominio": "R$ 400",
+    "caracteristicas": "61 m² 3 Quartos 2 Banheiros 1 Vagas",
+    "descricao": "Apartamento com 3 Quartos para Venda/Aluguel, 61m²",
+    "endereco": "Avenida General Osório de Paiva, 857 - Parangaba, Fortaleza - CE"
+  },
+  {
+    "imagem": "https://resizedimgs.vivareal.com/R0TT6g7J9IVF5ITrfep39kXmEDs=/crop/360x240/vr.images.sp/f1d956832d232e9674b4c9ec26fe72d9.jpg",
+    "aluguel": "R$ 1.000",
+    "condominio": "R$ 350",
+    "caracteristicas": "52 m² 2 Quartos 1 Banheiros 1 Vagas",
+    "descricao": "Apartamento com 2 Quartos para Aluguel, 52m²",
+    "endereco": "Rua Professor Luís de Vasconcelos, 160 - Vila Progresso, Sorocaba - SP"
+  }
+]

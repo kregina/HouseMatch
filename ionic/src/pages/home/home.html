@@ -1,14 +1,50 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Imoveis list
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <div swing-stack #myswing1 [stackConfig]="stackConfig" (throwoutleft)="voteUp(false)" (throwoutright)="voteUp(true)" id="card-stack">
+    <ion-card #mycards1 swing-card *ngFor="let c of cards">
+      <ion-item *ngIf="c?.imagem">
+        <img id="card-image" *ngIf="c?.imagem" [src]="c?.imagem">
+        <h1 id="card-title">{{ c?.aluguel }}</h1>
+        <h1 id="card-subtitle"><ion-icon name="ios-heart-outline"></ion-icon>10</h1>
+      </ion-item>
+
+      <ion-row *ngIf="detail">
+        <ion-col>
+          <p>{{c.aluguel}} + {{c.condominio}}</p>
+          <p>{{c.descricao}}</p>
+          <p>{{c.endereco}}</p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row *ngIf="c">
+        <ion-col>
+          <button ion-button icon-only clear (click)="voteUp(false)">
+            <ion-icon color="danger" name="ios-close-circle"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-only clear (click)="voteUp(true)">
+            <ion-icon color="secondary" name="ios-heart"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-only clear>
+            <ion-icon name="ios-chatbubbles"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-only clear (click)="seeDetail()">
+            <ion-icon name="information-circle"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
 </ion-content>
