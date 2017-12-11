@@ -29,9 +29,9 @@ export class ChatsListPage {
   initializeItems() {
     this.chats = [
       { id: 1, name: 'Name 1', status: true, image: '../../assets/imgs/placeholder.jpg' },
-      { id: 2, name: 'Name 2', status: true, image: '../../assets/imgs/placeholder.jpg' },
+      { id: 2, name: 'Name 2', status: false, image: '../../assets/imgs/placeholder.jpg' },
       { id: 3, name: 'Name 3', status: true, image: '../../assets/imgs/placeholder.jpg' },
-      { id: 4, name: 'Name 4', status: true, image: '../../assets/imgs/placeholder.jpg' },
+      { id: 4, name: 'Name 4', status: false, image: '../../assets/imgs/placeholder.jpg' },
       { id: 5, name: 'Name 5', status: true, image: '../../assets/imgs/placeholder.jpg' }
     ];
   }
@@ -55,4 +55,7 @@ export class ChatsListPage {
     }
   }
 
+  open(page, param){
+    this.navCtrl.push(page, { item: param })
+  }
 }
