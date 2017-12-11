@@ -22,7 +22,9 @@ export class HomePage {
   detail;
   i=0;
 
-  constructor(private http: HttpClient,
+  constructor(
+    public navCtrl: NavController,
+    private http: HttpClient,
     private toastCtrl: ToastController,
     private propertiesProvider: PropertiesProvider) {
     this.stackConfig = {
@@ -73,6 +75,10 @@ export class HomePage {
 
   seeDetail(){
     this.detail = !this.detail;
+  }
+
+  open(page){
+    this.navCtrl.push(page);
   }
 
 }

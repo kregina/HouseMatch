@@ -1,9 +1,17 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Imoveis list
-    </ion-title>
-  </ion-navbar>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="md-contact"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>House Match</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" (click)="open('Chats')">
+        <ion-icon name="md-chatboxes"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
@@ -12,7 +20,7 @@
       <ion-item *ngIf="c?.imagem">
         <img id="card-image" *ngIf="c?.imagem" [src]="c?.imagem">
         <h1 id="card-title">{{ c?.aluguel }}</h1>
-        <h1 id="card-subtitle"><ion-icon name="ios-heart-outline"></ion-icon>10</h1>
+        <h1 id="card-subtitle"><ion-icon name="ios-heart-outline"></ion-icon> 10</h1>
       </ion-item>
 
       <ion-row *ngIf="detail">
@@ -26,22 +34,22 @@
       <ion-row *ngIf="c">
         <ion-col>
           <button ion-button icon-only clear (click)="voteUp(false)">
-            <ion-icon color="danger" name="ios-close-circle"></ion-icon>
+            <ion-icon color="danger" name="md-close-circle"></ion-icon>
           </button>
         </ion-col>
         <ion-col>
           <button ion-button icon-only clear (click)="voteUp(true)">
-            <ion-icon color="secondary" name="ios-heart"></ion-icon>
+            <ion-icon color="secondary" name="md-heart"></ion-icon>
           </button>
         </ion-col>
         <ion-col>
           <button ion-button icon-only clear>
-            <ion-icon name="ios-chatbubbles"></ion-icon>
+            <ion-icon name="md-chatbubbles"></ion-icon>
           </button>
         </ion-col>
         <ion-col>
           <button ion-button icon-only clear (click)="seeDetail()">
-            <ion-icon name="information-circle"></ion-icon>
+            <ion-icon name="md-information-circle"></ion-icon>
           </button>
         </ion-col>
       </ion-row>
